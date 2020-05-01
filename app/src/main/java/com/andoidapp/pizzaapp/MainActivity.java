@@ -40,6 +40,9 @@ public class MainActivity extends AppCompatActivity {
                 sSos=sos.getText().toString();
                 sSuc=suc.getText().toString();
 
+                txt = "Ati comandat " + sBuc + " pizza, " + sSos + " sos(uri), " + sSuc + " suc(uri)";
+
+
             }
         });
 
