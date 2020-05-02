@@ -42,9 +42,14 @@ public class MainActivity extends AppCompatActivity {
 
                 txt = "Ati comandat " + sBuc + " pizza, " + sSos + " sos(uri), " + sSuc + " suc(uri)";
 
+                Intent intent = new Intent(MainActivity.this, ComandActivity.class);
+                intent.putExtra("text",txt);
+
+                startActivity(intent);
 
             }
         });
+
 
         mBuc.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -132,5 +137,11 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+
+    public void openComandActivity(){
+        Intent intent = new Intent(this, ComandActivity.class);
+        startActivity(intent);
     }
 }
